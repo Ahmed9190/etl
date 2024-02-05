@@ -35,7 +35,6 @@ This project is a comprehensive Extract, Transform, Load (ETL) pipeline implemen
 
 - [Python](https://www.python.org/downloads/)
 - [Docker](https://www.docker.com/get-started) (optional, required for using Docker)
-- [Docker Compose](https://docs.docker.com/compose/install/) (optional, required for using Docker Compose)
 
 ## Installation
 
@@ -44,7 +43,7 @@ This project is a comprehensive Extract, Transform, Load (ETL) pipeline implemen
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/ahmed9190/etl.git
+   git clone https://github.com/Ahmed9190/etl.git
    cd etl
    ```
 
@@ -89,14 +88,6 @@ This project is a comprehensive Extract, Transform, Load (ETL) pipeline implemen
    ```bash
    docker compose up
    ```
-
-## Usage
-
-Run the ETL pipeline:
-
-```bash
-docker-compose up
-```
 
 ## Customization
 
