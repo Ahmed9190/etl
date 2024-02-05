@@ -64,7 +64,7 @@ This project is a comprehensive Extract, Transform, Load (ETL) pipeline implemen
 4. Run the ETL pipeline:
 
    ```bash
-    python src/main.py
+    python main.py
    ```
 
 ### Method 2: With Docker
