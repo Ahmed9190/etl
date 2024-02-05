@@ -1,0 +1,20 @@
+version: '3.9'
+services:
+  etl:
+    build:
+      context: .
+    volumes:
+      - ./:/app
+    env_file:
+      - .env
+    environment:
+      - MONGO_DATABASE_URI=mongodb://mongo:27017/etl
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:latest
+    env_file:
+      - .env
+    ports:
+      - "27017:27017"

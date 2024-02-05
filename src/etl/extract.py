@@ -41,23 +41,3 @@ def extract_from_api(url:str)->pd.DataFrame:
   except Exception as e:
     print(f"Error: An error occurred - {e}")
     return None
-
-def extract_from_json(json:str)->pd.DataFrame:
-  """
-  Extracts data from a JSON file and returns a pandas DataFrame.
-
-  Parameters:
-  json_file (str): The path to the JSON file.
-
-  Returns:
-  pandas.DataFrame: The extracted data as a DataFrame.
-  """
-  try:
-    data = pd.read_json(json)
-    return data
-  except FileNotFoundError:
-    print(f"Error: File not found - {json}")
-    return None
-  except Exception as e:
-    print(f"Error: An error occurred - {e}")
-    return None
